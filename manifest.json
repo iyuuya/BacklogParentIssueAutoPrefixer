@@ -1,0 +1,14 @@
+{
+  "name": "BacklogParentIssueAutoPrefixer",
+  "description": "Backlogの親課題名を件名の先頭に設定する拡張",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://*.backlog.jp/*", "https://*.backlog.com/*"],
+      "js": ["jquery-3.3.1.min.js", "main.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "homepage_url": "https://github.com/iyuuya/BacklogParentIssueAutoPrefixer"
+}
